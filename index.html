@@ -6,25 +6,32 @@
     <title>PixelMart</title>
     <script>
       // Se arriviamo da un redirect 404 (GitHub Pages SPA) ripristina il path originale prima che React monti
-      (function(){
+      (function () {
         try {
-          var pending = sessionStorage.getItem('__spa_redirect');
+          var pending = sessionStorage.getItem("__spa_redirect");
           if (pending) {
-            sessionStorage.removeItem('__spa_redirect');
-            var base = '/PixelMart.Deploy';
-            if (location.pathname === base + '/' && !location.search && !location.hash) {
+            sessionStorage.removeItem("__spa_redirect");
+            var base = "/PixelMart.Deploy";
+            if (
+              location.pathname === base + "/" &&
+              !location.search &&
+              !location.hash
+            ) {
               // Evita loop se il path è già stato ripristinato
               var target = base + pending;
-              if (target !== location.pathname + location.search + location.hash) {
-                history.replaceState(null, '', target);
+              if (
+                target !==
+                location.pathname + location.search + location.hash
+              ) {
+                history.replaceState(null, "", target);
               }
             }
           }
-        } catch(e) {}
+        } catch (e) {}
       })();
     </script>
-    <script type="module" crossorigin src="/PixelMart.Deploy/assets/index-CHS_1qHS.js"></script>
-    <link rel="stylesheet" crossorigin href="/PixelMart.Deploy/assets/index-COA530r9.css">
+    <script type="module" crossorigin src="/PixelMart.Deploy/assets/index-M8DmKMd2.js"></script>
+    <link rel="stylesheet" crossorigin href="/PixelMart.Deploy/assets/index-BR4InF_J.css">
   </head>
   <body>
     <div id="root"></div>
